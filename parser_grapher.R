@@ -22,5 +22,7 @@ uniform = subset(parser, cond == 'uni-1-6')
 zipf = subset(parser, cond = 'zipf-1-6')
 
 
-plot3d(uniform$fscore, uniform$index, uniform$forgetRate, col='red', type='l')
+
 lines3d(zipf$fscore, zipf$index, zipf$forgetRate, col='blue')
+
+plot3d(uniform$index, uniform$fscore, uniform$forgetRate, col='red', type='l')
